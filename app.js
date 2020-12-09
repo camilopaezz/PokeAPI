@@ -45,13 +45,13 @@ class Pokemon {
   }
 
   render() {
+    this.elements.img.setAttribute("src", this.img)
     this.elements.name.textContent = this.name
     this.elements.id.textContent = this.id
     this.elements.type.textContent = this.type
     this.elements.abilities.textContent = this.abilities
     this.elements.height.textContent = this.height
     this.elements.weight.textContent = this.weight
-    this.elements.img.setAttribute("src", this.img)
   }
 
   generarHabilidades() {
@@ -74,6 +74,3 @@ async function iniciar() {
   let pokemon = new Pokemon
   pokemon.render()
 }
-
-
-
