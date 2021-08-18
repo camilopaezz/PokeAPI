@@ -12,12 +12,9 @@ function generarNumero(max) {
 
 async function getData(num) {
   try {
-    const data_1 = await new Promise((resolve, reject) => {
-      $.get(API_URL.replace(":id", num), OPTIONS, (data) => {
-        resolve(data)
-      }).fail(reject)
-    })
-    responseGet = data_1
+    const response = await fetch(API_URL.replace(':id', num))
+    const data = await response.json()
+    responseGet = data
   } catch (error) {
     console.log(error)
   }

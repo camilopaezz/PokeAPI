@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="https://i.pinimg.com/favicons/a40352d7d454ef7af8dde97a9e04fced58e1c6881da3b2278427dd1b.png?3d8b7834df7280e0c36726dad518ad50" type="image/x-icon">
-  <title>PokeAPI</title>
-</head>
-<body>
-  <div class="generalContainer">
-    <div class="container">
-      <div class="imgContainer">
-        <img id="img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
-      </div>
-      <div class="infoContainer">
-        <h1 class="title">PokéAPI</h1>
-        <h2 class="name"><i id="name">Bulbasaur</i></h2>
-        <p class="sub-title">Pokemon ID: <i id="id" class="info">1</i></p>
-        <p class="sub-title">Type: <i id="type" class="info">Grass</i></p>
-        <p class="sub-title">Abilities: <i id="abilities" class="info">Overgrow, Chlorophyll</i></p>
-        <p class="sub-title">Height: <i id="height" class="info">0.7</i><i class="unit">m</i></p>
-        <p class="sub-title">Weight: <i id="weight" class="info">6.9</i><i class="unit">kg</i></p>
-        <div class="btn">
-          <button id="start">Random</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://i.pinimg.com/favicons/a40352d7d454ef7af8dde97a9e04fced58e1c6881da3b2278427dd1b.png?3d8b7834df7280e0c36726dad518ad50"
+      type="image/x-icon"
+    />
+    <title>PokeAPI</title>
+  </head>
+  <body>
+    <div class="generalContainer">
+      <div class="container">
+        <div class="imgContainer">
+          <img
+            id="img"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+          />
+        </div>
+        <div class="infoContainer">
+          <h1 class="title">PokéAPI</h1>
+          <h2 class="name"><i id="name">Bulbasaur</i></h2>
+          <p class="sub-title">Pokemon ID: <i id="id" class="info">1</i></p>
+          <p class="sub-title">Type: <i id="type" class="info">Grass</i></p>
+          <p class="sub-title">
+            Abilities: <i id="abilities" class="info">Overgrow, Chlorophyll</i>
+          </p>
+          <p class="sub-title">
+            Height: <i id="height" class="info">0.7</i><i class="unit">m</i>
+          </p>
+          <p class="sub-title">
+            Weight: <i id="weight" class="info">6.9</i><i class="unit">kg</i>
+          </p>
+            <button id="start">Random</button>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="./app.js"></script>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
